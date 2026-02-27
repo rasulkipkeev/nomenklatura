@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pandas
+openpyxl
+thefuzz
+python-multipart
+sqlalchemy
+pydantic
+python-Levenshtein
+lxml
