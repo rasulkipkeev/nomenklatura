@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
 from thefuzz import fuzz, process
-from ..models import MasterItem, SupplierItem
+from models import MasterItem, SupplierItem
 
 # Configurable threshold for fuzzy matching
 FUZZY_MATCH_THRESHOLD = 80

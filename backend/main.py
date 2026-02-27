@@ -5,11 +5,11 @@ from sqlalchemy.orm import Session
 from sqlalchemy import or_
 from typing import List, Optional
 
-from .database import engine, Base, get_db
-from .models import MasterItem, SupplierItem
-from .services.parser import parse_price_list
-from .services.matcher import match_supplier_items
-from .services.export import generate_1c_export_csv, generate_1c_export_xml
+from database import engine, get_db
+from models import MasterItem, SupplierItem, Base
+from services.parser import parse_price_list
+from services.matcher import match_supplier_items
+from services.export import generate_1c_export_csv, generate_1c_export_xml
 
 Base.metadata.create_all(bind=engine)
 
